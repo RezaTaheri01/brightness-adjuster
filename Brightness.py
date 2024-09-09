@@ -83,6 +83,10 @@ class BrightnessWindow(QMainWindow):
             qtRectangle.moveCenter(centerPoint)
             self.move(qtRectangle.topLeft())
 
+        if not os.path.exists(icon): # if icon not found
+            QMessageBox.critical(None, 'error', 'Icon not founded!')
+            sys.exit(0)
+
         self.setWindowIcon(QtGui.QIcon(icon))
         self.setWindowTitle('Brightness')
         self.setGeometry(300, 300, w, h)
