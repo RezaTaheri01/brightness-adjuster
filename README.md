@@ -1,7 +1,6 @@
 * * *
 
-Brightness Adjuster
-===================
+# Brightness Adjuster
 
 Description
 -----------
@@ -75,7 +74,7 @@ Configuration
 License
 -------
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+This project is licensed under the MIT License - see the [LICENSE](https://github.com/RezaTaheri01/brightness-adjuster/blob/main/LICENSE) file for details.
 
 Acknowledgements
 ----------------
