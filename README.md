@@ -84,3 +84,7 @@ Acknowledgements
 *   Also thanks ChatGPT for this readme :)
 
 * * *
+
+Todo
+----------------
+- [ ]  exe application
