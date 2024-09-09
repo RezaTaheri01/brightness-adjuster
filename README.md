@@ -28,46 +28,36 @@ Requirements
 
 You can install the required packages using `pip`:
 
-bash
-
-Copy code
-
-`pip install PyQt5 pyvda screen-brightness-control keyboard tendo`
+```
+pip install PyQt5 pyvda screen-brightness-control keyboard tendo
+```
 
 Installation
 ------------
 
 1.  **Clone the repository:**
+2.  
+    ```
+    git clone https://github.com/yourusername/brightness-adjuster.git
+    ```
     
-    bash
+4.  **Navigate to the project directory:**
     
-    Copy code
+    ```
+    cd brightness-adjuster
+    ```
     
-    `git clone https://github.com/yourusername/brightness-adjuster.git`
+6.  **Install the required dependencies (virtual environment recommend):**
     
-2.  **Navigate to the project directory:**
+    ```
+    pip install -r req.txt
+    ```
     
-    bash
+8.  **Run the application:**
     
-    Copy code
-    
-    `cd brightness-adjuster`
-    
-3.  **Install the required dependencies:**
-    
-    bash
-    
-    Copy code
-    
-    `pip install -r requirements.txt`
-    
-4.  **Run the application:**
-    
-    bash
-    
-    Copy code
-    
-    `python main.py`
+    ```
+    python Brightness.py
+    ```
     
 
 Usage
@@ -91,5 +81,6 @@ Acknowledgements
 
 *   Thanks to the PyQt5 and pyvda libraries for their robust GUI and virtual desktop management features.
 *   Special thanks to the `screen-brightness-control` library for its ease of use in controlling screen brightness.
+*   Also thanks ChatGPT for this readme :)
 
 * * *
