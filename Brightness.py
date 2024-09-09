@@ -30,7 +30,7 @@ class BrightnessWorker(QThread):
         self.process = True
 
     def run(self):
-        keyboard.add_hotkey('ctrl + e', self.exit_app)
+        keyboard.add_hotkey('alt + e', self.exit_app)
         oneTime = [True for _ in range(self.num_desktops)]
         while self.process:
             time.sleep(0.5)
