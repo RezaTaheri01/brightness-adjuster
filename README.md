@@ -38,7 +38,7 @@ Installation
 1.  **Clone the repository:**
 2.  
     ```
-    git clone https://github.com/yourusername/brightness-adjuster.git
+    git clone https://github.com/RezaTaheri01/brightness-adjuster.git
     ```
     
 4.  **Navigate to the project directory:**
