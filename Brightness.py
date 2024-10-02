@@ -40,12 +40,12 @@ class BrightnessWorker(QThread):
                 oneTime = [True for _ in range(self.num_desktops)]
                 oneTime[desk - 1] = False
 
-    def exit_app(self):
+    def exit_app(self):  # stop functionality
         with open('./cache.txt', 'w') as file:
             file.write(str(each_brightness))
         self.process = False
         self.exit_signal.emit()
-        QApplication.quit()  # Request the application to exit
+        # QApplication.quit()  # Request the application to exit
 
 
 class BrightnessWindow(QMainWindow):
@@ -83,7 +83,7 @@ class BrightnessWindow(QMainWindow):
             qtRectangle.moveCenter(centerPoint)
             self.move(qtRectangle.topLeft())
 
-        if not os.path.exists(icon): # if icon not found
+        if not os.path.exists(icon):  # if icon not found
             QMessageBox.critical(None, 'error', 'Icon not founded!')
             sys.exit(0)
 
@@ -253,10 +253,10 @@ class BrightnessWindow(QMainWindow):
         if self.worker_thread:
             self.worker_thread.exit_app()  # Stop the worker thread safely
             self.worker_thread.wait()
-            
+
         with open('./cache.txt', 'w') as file:
             file.write(str(each_brightness))
-            
+
         QApplication.quit()  # Request the application to exit
         event.accept()  # Let the application close gracefully
 
