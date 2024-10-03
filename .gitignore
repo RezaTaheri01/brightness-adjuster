@@ -160,4 +160,5 @@ cython_debug/
 #.idea/
 
 /App
-App/Brightness.7z
+./App
+
