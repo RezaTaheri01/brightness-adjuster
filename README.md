@@ -65,7 +65,8 @@ Usage
 
 *   **Start/Stop**: Click the "Start" button to begin adjusting brightness. Click the "Stop" button to halt brightness adjustment.
 *   **Adjust Brightness**: Use the spin boxes to set the brightness levels for each virtual desktop.
-*   **Exit**: When app started use alt + e to exit or from system tray right click on app icon.
+*   **Stop**: When app started use alt + e to stop functionality.
+*   **Exit**: From system tray right click on app icon.
 
 Configuration
 -------------
